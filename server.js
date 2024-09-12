@@ -21,7 +21,7 @@ io.on("connection", (socket) => {
 
     socket.join(user.room);
 
-    socket.emit("message", formatMessage(botName, "Welcome to FreeChat!"));
+    socket.emit("message", formatMessage(botName, "Welcome to Live Chat!"));
 
     socket.broadcast
       .to(user.room)
